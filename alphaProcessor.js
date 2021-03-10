@@ -23,7 +23,7 @@ const processData = (data) => {
       const $stud = stud.sort((a, b) => {
         return b.marks - a.marks;
     });
-        y['students'] = stud;
+        y['students'] = $stud;
         y['marks']= s
     })
  data.schools.forEach((s) => {
@@ -32,10 +32,10 @@ const processData = (data) => {
          return s.id === t.school_id;
      })
      let  m = memb.map(item => item.marks? item.marks: 0).reduce((prev, next) => prev + next);
-     const mem = memb.sort((a, b) => {
+     const $memb = memb.sort((a, b) => {
         return b.marks - a.marks;
     });
-     s['members'] = memb;
+     s['members'] = $memb;
      s['marks']= m
  })
  const finalData = data.schools.sort((a, b) => {

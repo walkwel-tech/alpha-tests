@@ -1,4 +1,4 @@
-const inputData = require('./data/case-alpha/data-from-api.json');
+const inputData = require('../data/case-alpha/data-from-api.json');
 const fs = require('fs');
 
 const winston = require('winston');
@@ -11,4 +11,4 @@ winston.add(files);
 winston.level = 'debug';
 
 const s = processData(inputData);
-fs.writeFileSync(`${__dirname}/data/case-alpha/processed-data.json`, JSON.stringify(s, null, 4));
+fs.writeFileSync(`${__dirname}/../data/case-alpha/processed-data.json`, JSON.stringify(s, null, 4));

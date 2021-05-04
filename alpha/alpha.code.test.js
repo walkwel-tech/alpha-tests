@@ -1,7 +1,7 @@
 const {processData} = require('./alphaProcessor');
 
-const portfolioData = require('./data/case-alpha/data-from-api.json');
-const tableData = require('./data/case-alpha/processed-data.json');
+const portfolioData = require('../data/case-alpha/data-from-api.json');
+const tableData = require('../data/case-alpha/processed-data.json');
 
 describe('Better Data Processing', () => {
 

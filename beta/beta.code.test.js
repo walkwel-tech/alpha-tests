@@ -12,7 +12,7 @@ describe('Better Data Processing', () => {
 
   it('Props to be Same for First Objects', () => {
     const processedData = processData(portfolioData);
-    expect(Object.keys(processedData[0])).toMatchObject(Object.keys(tableData[0]));
+    expect(Object.keys(processedData['records'][0])).toMatchObject(Object.keys(tableData['records'][0]));
   });
 
   it('Data to Match', () => {

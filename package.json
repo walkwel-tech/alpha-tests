@@ -1,6 +1,6 @@
 {
-  "name": "data-manipulation",
-  "version": "1.0.0",
+  "name": "data-manipulation-test",
+  "version": "1.0.1",
   "description": "Data manipulations using JEST tests",
   "main": "index.js",
   "scripts": {
